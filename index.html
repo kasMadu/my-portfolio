@@ -64,7 +64,7 @@
                     Aim to use gained knowledge for testing <br/>software products, developing, and <br/>implementing new software platforms and <br/>providing IT support and assistance to <br/> colleagues. 
                 </h4>
                 <br/>
-                <a href="" class="cv_btn"><b>View My CV</b></a>
+                <a href="mycv.pdf" target="_blank" style="text-decoration: none;" class="cv_btn"><b>View My CV</b></a>
             </div>
 
             <div class="verticle_line"></div>
@@ -99,11 +99,13 @@
                 <br/>
                 <h4>Web Design</h4>
                 <br/>
-                <h4>Design</h4>
+                <h4>Graphic design</h4>
                 <br/>
                 <h4>Project Management</h4>
                 <br/>
                 <h4>Team Work</h4>
+                <br/>
+                <h4>UI/UX design</h4>
             </div>
         </div>
         <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
@@ -154,7 +156,7 @@
                 <h4>BSc (Hons) Computer Science</h4>
                 <br>
                 <h4>BSc (Hons) in Computer Science offered <br>by the University of Westminster at IIT.  <br>Main Subjects to be Covered: Software <br>Development (Python), 
-                    Software <br>Development (Design), Mathematics  <br>for Computing, Java, Quality Assurance, 
+                    Software <br>Development (Design), Mathematics, <br>Web development<br>for Computing, Java, Quality Assurance, 
                     <br>Web development 
                 </h4>
                 <br>
@@ -175,7 +177,7 @@
                 <hr>
                 <br>
                 <h3 class="yr">2020 - 2023 </h3>
-                <h4>Web Development Certificate </h4>
+                <h4>Foundation Certificate </h4>
                 <br>
                 <h4>
                     (KIU) COMPUTER DECIPLINES (3 Months <br>Programme) Subjects Covered: Mathematics <br>
@@ -221,6 +223,14 @@
 
                     <section class="bar">
                         <section class="info">
+                            <span><b>Figma</b></span>
+                        </section>
+                        <section class="progress_line css"><span></span></section>
+                    </section>
+                    <br><br>
+
+                    <section class="bar">
+                        <section class="info">
                             <span><b>Python</b></span>
                         </section>
                         <section class="progress_line python"><span></span></section>
@@ -234,20 +244,13 @@
                         <section class="progress_line java"><span></span></section>
                     </section>
                     <br><br>
+                    
 
                     <section class="bar">
                         <section class="info">
-                            <span><b>Adobe Ai, Ps</b></span>
+                            <span><b>Adobe AI, PS, XD</b></span>
                         </section>
                         <section class="progress_line adobe"><span></span></section>
-                    </section>
-                    <br><br>
-
-                    <section class="bar">
-                        <section class="info">
-                            <span><b>Microsoft Office</b></span>
-                        </section>
-                        <section class="progress_line office"><span></span></section>
                     </section>
                     <br><br>
                 
@@ -257,7 +260,7 @@
         </div>
 
         <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br
-        ><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        ><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 
         <!-----------Div------------>
@@ -275,6 +278,7 @@
 
         
         <!-----------Contact me------------>
+        <?php include 'footer.php';?>
         <div class="contact" id="con">
             <div class="msg">
                 <h1>Send a Message</h1>
@@ -309,17 +313,17 @@
                         </div>
 
                         <div class="contact_form">
-                            <form>
+                            <form  action="process.php" method="post">
                                 <div class="inputBox">
-                                    <input type="text" required="required">
+                                    <input type="text" name="fullname" required="required">
                                     <span>Full Name</span>
                                 </div>
                                 <div class="inputBox">
-                                    <input type="text" required="required">
+                                    <input type="text" name="email" required="required">
                                     <span>Email</span>
                                 </div>
                                 <div class="inputBox">
-                                    <textarea required="required"></textarea>
+                                    <textarea name="message" required="required"></textarea>
                                     <span>Type your Message...</span>
                                 </div>
                                 <div class="inputBox">
